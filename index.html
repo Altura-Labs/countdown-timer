@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Timer</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./assets/tailwind-bundle.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+
+  <section class="grid-container min-h-screen place-content-center">
+
+    <!-- background -->
+    <div class="col-start-1 col-end-3 flex lg:col-start-1 lg:col-end-7 items-start justify-start h-screen">
+      <img src="./img/background.png" alt="background" srcset="" class="object-cover h-screen">
+    </div>
+
+    <!-- wrapper timer -->
+    <div
+      class="col-start-1 col-end-3 flex title-small lg:col-start-7 lg:col-end-13 flex-col items-start justify-center gap-8">
+      <!-- title -->
+      <h1 class="text-6xl">Talk ends in</h1>
+
+      <!-- timer -->
+      <div onclick="startTimer()" class="timer-container cursor-pointer">
+        <div id="timer">00:00:00</div>
+      </div>
+
+      <!-- description -->
+      <p class="text-3xl text-center w-full">
+        be kind to yourself, be kind with your collegues
+      </p>
+    </div>
+
+  </section>
+
+  <footer class="fixed bottom-0 left-0 right-0 z-10">
+    <!-- logos -->
+    <div class="grid-container place-content-center footer">
+      <div
+        class="col-start-1 col-end-3 flex title-small lg:col-start-7 lg:col-end-13 flex items-center justify-between gap-8">
+
+        <!-- logo altura -->
+        <div>
+          <img src="./img/alturalabs.png" alt="" class="block h-[3.5em] w-fit">
+        </div>
+
+        <!-- action buttons -->
+        <div class="flex gap-4">
+          <button id="startButton" class="button" onclick="startTimer()">Start</button>
+          <!-- <button id="stopButton" class="button" onclick="stopTimer()">Stop</button> -->
+          <button id="resetButton" class="button" onclick="resetTimer()">Reset</button>
+        </div>
+
+        <!-- logo eurogroup -->
+        <div>
+          <img src="./img/euro-group-consulting.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./assets/script.js"></script>
+</body>
+
+</html>

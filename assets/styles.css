@@ -1,0 +1,109 @@
+@font-face {
+	font-family: 'clockicons';
+	src: url('../fonts/clockicons/web-fonts/84cb021d5f9af287ffff84b61beef6dc.eot');
+	src: url('../fonts/clockicons/web-fonts/84cb021d5f9af287ffff84b61beef6dc.eot?#iefix')
+			format('embedded-opentype'),
+		url('../fonts/clockicons/web-fonts/84cb021d5f9af287ffff84b61beef6dc.woff')
+			format('woff'),
+		url('../fonts/clockicons/web-fonts/84cb021d5f9af287ffff84b61beef6dc.woff2')
+			format('woff2'),
+		url('../fonts/clockicons/web-fonts/84cb021d5f9af287ffff84b61beef6dc.ttf')
+			format('truetype'),
+		url('../fonts/clockicons/web-fonts/84cb021d5f9af287ffff84b61beef6dc.svg#clockicons')
+			format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	color: #414141;
+}
+
+.timer-container {
+	text-align: center;
+	background-color: #111;
+	width: 100%;
+	padding: 1rem 2rem;
+}
+
+#timer {
+	font-size: 7.5rem;
+	font-family: 'clockicons', sans-serif;
+	color: #ff9500;
+}
+
+.button {
+	font-size: 1em;
+	padding: 8px 16px;
+	border: 1px solid #a1a1a1;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.05s ease-in-out;
+}
+.button:hover {
+	border: 1px solid #414141;
+	background-color: #414141;
+	color: #fff;
+}
+.button:active {
+	border: 1px solid #111;
+	background-color: #111;
+	color: #fff;
+}
+
+.grid-container {
+	width: 100%;
+	grid-column-gap: 0.9375rem;
+	grid-row-gap: 0.9375rem;
+	-moz-column-gap: 0.9375rem;
+	column-gap: 0.9375rem;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	margin-right: 3.75rem;
+	row-gap: 0.9375rem;
+}
+
+@media (min-width: 1024px) {
+	.grid-container {
+		-moz-column-gap: 1.25rem;
+		column-gap: 1.25rem;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		margin-right: 5.625rem;
+		row-gap: 1.875rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.grid-container {
+		-moz-column-gap: 1.875rem;
+		column-gap: 1.875rem;
+	}
+}
+
+@media (min-width: 1536px) {
+	.grid-container {
+		-moz-column-gap: 3.75rem;
+		column-gap: 3.75rem;
+	}
+}
+
+footer {
+	padding: 4rem 0;
+	margin-right: 3.75rem;
+}
+
+@media (min-width: 1024px) {
+	footer {
+		margin-right: 5.625rem;
+	}
+}
